@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPD</title>
+       {% load static %}
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+</head>
+<body>
+ <header>
+        <div class="logo">
+           <a href="#"class="mylogo">GPD</a>
+        </div>
+        <nav>
+           <a class="nav-link" href="https://uosci.onrender.com/index">Home</a>
+            <a class="nav-link" href="https://uosci.onrender.com/records">Records</a>
+
+            <a class="nav-link" href="https://uosci.onrender.com/contacts">Contact</a>
+
+        </nav>
+    </header>
+<h1> Student Records</h1>
+<ul>
+{% for students in students  %}
+<li>{{students}}</li>
+    {%  endfor %}
+    </ul>
+</body>
+</html>
